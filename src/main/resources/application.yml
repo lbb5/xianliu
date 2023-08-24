@@ -1,0 +1,15 @@
+server:
+  port: 9999
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+      jedis:
+        pool:
+          enabled: true
+          max-active: 8
+          max-idle: 4
+          max-wait: 1ms
+          min-idle: 0
